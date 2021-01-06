@@ -55,7 +55,7 @@ func Resize(s string, length uint) string {
 // PrettyTime returns the string representation of the duration. It rounds the time duration to a second and returns a "---" when duration is 0
 func PrettyTime(t time.Duration) string {
 	if t == 0 {
-		return "---"
+		return "0s"
 	}
 	return (t - (t % time.Second)).String()
 }
